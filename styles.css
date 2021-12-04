@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Major+Mono+Display&family=Press+Start+2P&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    line-height: 1.5;
+    background: #434343;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    height: auto;
+    width: 100%;
+    margin: 1em auto;
+    max-width: 1300px;
+    border-radius: 5px 2em 5px 2em;
+    background-color: rgb(221, 77, 77);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: clamp(1em, 1.5em, 2.25em);
+}
+
+.header h1 {
+    font-family: "Major Mono Display", monospace;
+    color: rgb(247, 247, 247);
+}
+
+.search-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.5em;
+}
+.input-search {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    min-height: 2.5em;
+    outline: none;
+    border: none;
+    background-color: rgb(228, 226, 226);
+    padding: 0 0.5em;
+    font-family: "Press Start 2P", cursive;
+}
+.btn {
+    min-height: 2.75em;
+    width: 3em;
+    cursor: pointer;
+}
+
+.pokemon {
+    border-radius: 5px;
+    padding: 1em;
+    margin: 1em 0.5em 2em 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Fira Code", monospace;
+    background-color: rgb(29, 28, 28);
+    background: url("./images/grid.png") center repeat, #fff;
+}
+
+.pokemon__model-bg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    padding: 2em;
+}
+
+.pokemon__info {
+    width: 100%;
+    border-radius: 7px;
+    background-color: aquamarine;
+    text-transform: capitalize;
+    padding: 1em;
+    line-height: 1.7;
+}
+.pokemon__info h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+    letter-spacing: 3px;
+}
+
+.pokemon__info-stats ul {
+    list-style-type: none;
+}
+
+.pokemon__model {
+    width: 200px;
+}
+
+@media (min-width: 560px) {
+    .pokemon__model {
+        width: 300px;
+    }
+}
+@media (min-width: 740px) {
+    .pokemon__model {
+        width: 400px;
+    }
+    .pokemon {
+        flex-direction: row;
+    }
+    .pokemon__info {
+        line-height: 2;
+        width: 100%;
+    }
+}
+
+@media (min-width: 900px) {
+    .pokemon__model {
+        width: 500px;
+    }
+}
