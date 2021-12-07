@@ -37,8 +37,6 @@ const fetchData = async (query) => {
             .join(""),
     };
 
-    console.log(pokemon);
-
     // display to html
     pokemonDisplay.innerHTML = `
         <img src=${pokemon.sprite} alt=${pokemon.name} class="pokemon__model"/>
@@ -57,4 +55,12 @@ const fetchData = async (query) => {
     `;
 };
 
+// trigger input submit on enter key press
+inputSearch.addEventListener("keyup", (event) => {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        btn.click();
+    }
+});
+// button submit
 btn.addEventListener("click", () => fetchData(inputSearch.value));
