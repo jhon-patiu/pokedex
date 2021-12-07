@@ -19,8 +19,17 @@
     <body>
         <main class="container">
             <div class="header">
-                <h1>POKEDEX</h1>
-                <form class="search-bar">
+                <div class="header__title">
+                    <img
+                        src="./images/pokeball.png"
+                        alt="pokeball"
+                        width="44px"
+                        height="44px"
+                    />
+                    <h1>POKEDEX</h1>
+                </div>
+
+                <div class="search-bar">
                     <label for="search">
                         <input
                             type="text"
@@ -33,10 +42,32 @@
                     <button class="btn" type="button">
                         <i class="fas fa-search"></i>
                     </button>
-                </form>
+                </div>
             </div>
 
             <div class="pokemon"></div>
+            <div class="ui">
+                <img
+                    src="images/arrows.png"
+                    alt="arrow keys"
+                    width="80px"
+                    height="80px"
+                />
+                <div class="ui-btn">
+                    <img
+                        src="images/circle.ico"
+                        alt="circle button"
+                        width="60px"
+                        height="60px"
+                    />
+                    <img
+                        src="images/sq.png"
+                        alt="circle button"
+                        width="60px"
+                        height="60px"
+                    />
+                </div>
+            </div>
         </main>
     </body>
 </html>
