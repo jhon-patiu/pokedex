@@ -3,6 +3,19 @@
 const btn = document.querySelector(".btn");
 const inputSearch = document.querySelector(".input-search");
 const pokemonDisplay = document.querySelector(".pokemon");
+const loading = document.querySelector(".loading");
+
+// function spinner() {
+//     console.log("spins..");
+//     loading.classList.add("show");
+//     setTimeout(() => {
+//         loading.classList.remove("show"), 2000;
+//     });
+// }
+// function hideSpinner() {
+//     console.log("hide spin..");
+//     loading.classList.remove("show");
+// }
 
 window.addEventListener("DOMContentLoaded", () => {
     if (inputSearch.value === "") {
@@ -36,6 +49,7 @@ const fetchData = async (query) => {
             )
             .join(""),
     };
+    console.log(pokemon);
 
     // display to html
     pokemonDisplay.innerHTML = `
