@@ -44,7 +44,7 @@ body {
     max-width: 1300px;
     border-radius: 5px 1em 5px 1em;
     background-color: rgb(236, 58, 58);
-    box-shadow: inset -20px -20px rgb(112, 37, 37);
+    box-shadow: inset -5px -5px rgb(112, 37, 37);
     border: 1px solid rgb(112, 37, 37);
 }
 
@@ -85,6 +85,7 @@ body {
     background-color: rgb(223, 220, 220);
     padding: 0 0.5em;
     font-family: "Press Start 2P", cursive;
+    border-radius: 5px 0 0 5px;
 }
 .btn {
     min-height: 2.65em;
@@ -92,8 +93,9 @@ body {
     cursor: pointer;
     outline: none;
     border: 1px solid gray;
-    background-color: rgb(53, 52, 52);
+    background-color: rgb(52, 53, 52);
     color: white;
+    border-radius: 0 5px 5px 0;
 }
 
 .pokemon {
@@ -106,7 +108,6 @@ body {
     justify-content: center;
     align-items: center;
     font-family: "Fira Code", monospace;
-
     background: url("./images/grid.png") center repeat, rgb(17, 17, 17);
     background-size: contain;
     min-width: 320px;
@@ -174,6 +175,10 @@ body {
     .pokemon__info h2 {
         font-size: 40px;
         margin: 0.5em;
+    }
+
+    .container {
+        box-shadow: inset -20px -20px rgb(112, 37, 37);
     }
 }
 @media (min-width: 740px) {
